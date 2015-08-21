@@ -1,0 +1,89 @@
+@import 'variables';
+@import 'fonts';
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body,
+#content {
+  font-family: $body-font;
+  color: $text-color;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: relative;
+}
+
+a, a:visited, a:active {
+  color: $text-color;
+  text-decoration: none;
+}
+
+.right-column,
+.left-column {
+  position: absolute;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.left-column {
+  width: 100%;
+  max-width: 300px;
+  padding-top: 100px;
+  border-right: 1px solid $border-color;
+}
+
+.right-column {
+  width: calc(100% - 300px);
+  margin-left: 300px;
+  overflow-y: scroll;
+}
+
+.profile-card {
+  width: 100%;
+  text-align: center;
+}
+
+.mission {
+  max-width: 200px;
+  margin: auto;
+}
+
+.work-container {
+  padding-top: 25px;
+}
+
+section {
+  border-bottom: 1px solid $border-color;
+  padding: 50px 50px 25px 50px;
+}
+
+article {
+  display: inline-block;
+  max-width: 300px;
+  margin-right: 25px;
+  margin-top: 25px;
+  vertical-align: top;
+  cursor: default;
+}
+
+@media (max-width: 768px) {
+  .right-column,
+  .left-column {
+    position: static;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  .right-column {
+    margin-left: 0;
+  }
+}
+
+
+
