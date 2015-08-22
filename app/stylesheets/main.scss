@@ -92,7 +92,7 @@ article {
   cursor: default;
   width: 300px;
   height: 169px;
-  position: relative;
+  -webkit-font-smoothing: antialiased;
   img {
     width: 100%;
   }
