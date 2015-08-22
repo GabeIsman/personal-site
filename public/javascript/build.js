@@ -21,7 +21,7 @@ jade_mixins["work"] = function(job){
 var block = (this && this.block), attributes = (this && this.attributes) || {};
 buf.push("<article><img" + (jade.attr("src", job.image, true, false)) + "/><div class=\"article-text\"><a" + (jade.attr("href", job.url, true, false)) + " target=\"_blank\"><h4 class=\"article-title\">" + (jade.escape(null == (jade_interp = job.title) ? "" : jade_interp)) + "</h4></a><p class=\"article-description\">" + (jade.escape(null == (jade_interp = job.description) ? "" : jade_interp)) + "</p></div></article>");
 };
-buf.push("<div class=\"left-column\"><div class=\"profile-card\"><div class=\"image-container\"><img src=\"images/face.jpg\"/></div><h2 class=\"name-container\">Gabe Isman</h2><p class=\"mission\">Constantly seeking ways to increase peace, justice, and openness.</p></div></div><div class=\"right-column\"><section><h1>Projects</h1><div class=\"work-container\">");
+buf.push("<div class=\"left-column\"><div class=\"profile-card\"><div class=\"image-container\"><img src=\"images/face2.jpg\"/></div><h2 class=\"name-container\">Gabe Isman</h2><p class=\"mission\">Constantly seeking ways to increase peace, justice, and openness.</p></div></div><div class=\"right-column\"><section><h1>Projects</h1><div class=\"work-container\">");
 // iterate projects
 ;(function(){
   var $$obj = projects;
