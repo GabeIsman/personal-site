@@ -20,6 +20,7 @@ body,
 p {
   font-family: $body-font;
   font-style: italic;
+  font-weight: 600;
   margin-top: 5px;
 }
 
@@ -72,6 +73,15 @@ h4 {
   margin: auto;
 }
 
+.social-links {
+  margin-top: 15px;
+}
+
+.social-link {
+  font-size: 16px;
+  padding: 0 10px;
+}
+
 .work-container {
   padding-top: 25px;
   width: 100%;
@@ -108,9 +118,16 @@ article {
     background-color: #000;
     opacity: 0.75;
   }
-  &:hover:before {
-    opacity: 0.5;
+  &:hover {
+    &:before {
+      opacity: 0.5;
+    }
+    p {
+      color: #fff;
+      font-weight: 600;
+    }
   }
+
 }
 
 .article-text {
@@ -155,6 +172,11 @@ article {
 
   .work-container {
     text-align: center;
+  }
+
+  .social-link {
+    font-size: 20px;
+    padding: 0 15px;
   }
 }
 
