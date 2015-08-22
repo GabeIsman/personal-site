@@ -1,14 +1,15 @@
 mixin work(job)
   article
-    .article-image
-      img(src=job.image)
-    a(href=job.url target='_blank')
-      h4.article-title= job.title
-    p.article-description= job.description
+    img(src=job.image)
+    .article-text
+      a(href=job.url target='_blank')
+        h4.article-title= job.title
+      p.article-description= job.description
 
 .left-column
   .profile-card
     .image-container
+      img(src='images/face.jpg')
     h2.name-container Gabe Isman
     p.mission Constantly seeking ways to increase peace, justice, and openness.
 .right-column

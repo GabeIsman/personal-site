@@ -19,9 +19,9 @@ var jade_interp;
 ;var locals_for_with = (locals || {});(function (jobs, projects, undefined) {
 jade_mixins["work"] = function(job){
 var block = (this && this.block), attributes = (this && this.attributes) || {};
-buf.push("<article><div class=\"article-image\"><img" + (jade.attr("src", job.image, true, false)) + "/></div><a" + (jade.attr("href", job.url, true, false)) + " target=\"_blank\"><h4 class=\"article-title\">" + (jade.escape(null == (jade_interp = job.title) ? "" : jade_interp)) + "</h4></a><p class=\"article-description\">" + (jade.escape(null == (jade_interp = job.description) ? "" : jade_interp)) + "</p></article>");
+buf.push("<article><img" + (jade.attr("src", job.image, true, false)) + "/><div class=\"article-text\"><a" + (jade.attr("href", job.url, true, false)) + " target=\"_blank\"><h4 class=\"article-title\">" + (jade.escape(null == (jade_interp = job.title) ? "" : jade_interp)) + "</h4></a><p class=\"article-description\">" + (jade.escape(null == (jade_interp = job.description) ? "" : jade_interp)) + "</p></div></article>");
 };
-buf.push("<div class=\"left-column\"><div class=\"profile-card\"><div class=\"image-container\"></div><h2 class=\"name-container\">Gabe Isman</h2><p class=\"mission\">Constantly seeking ways to increase peace, justice, and openness.</p></div></div><div class=\"right-column\"><section><h1>Projects</h1><div class=\"work-container\">");
+buf.push("<div class=\"left-column\"><div class=\"profile-card\"><div class=\"image-container\"><img src=\"images/face.jpg\"/></div><h2 class=\"name-container\">Gabe Isman</h2><p class=\"mission\">Constantly seeking ways to increase peace, justice, and openness.</p></div></div><div class=\"right-column\"><section><h1>Projects</h1><div class=\"work-container\">");
 // iterate projects
 ;(function(){
   var $$obj = projects;
@@ -92,43 +92,51 @@ module.exports = {
       title: 'Paper City',
       description: 'Documentary and accompanying curriculum empowering at-risk, and incarcerated youth to take control of their futures. I built the website, and continue consulting on technology.',
       url: 'http://www.papercitymovie.com',
-      image: ''
+      image: 'images/papercity.jpg'
     },
 
     {
       title: 'Media Public',
       description: 'Re-imagining public media. Knight Foundation Prototype Fund grantee. Actively working with @mkramer, @arbiterofbits, and @nkkl.',
       url: 'https://github.com/mediapublic/mediapublic',
-      image: ''
+      image: 'images/mediapublic.jpg'
     },
 
     {
       title: 'Check The Police',
       description: 'Built the rails app for the grading system for local policies around policing and accontability. Developed by @samswey and @deray.',
       url: 'http://www.checkthepolice.org/',
-      image: '',
+      image: 'images/checkthepolice.jpg',
     },
 
     {
       title: 'TechChange',
-      description: 'I am building features and consulting on development best practices.',
+      description: 'Building features and consulting on development best practices.',
       url: 'https://www.techchange.org/',
-      image: '',
+      image: 'images/techchange.jpg',
     },
+
+    {
+      title: 'Knock at the Gates',
+      description: 'Visualizing the application of the death penalty in America. In collaboration with @john_s_west and @galenbeebe.',
+      url: 'http://knock-at-the-gates.etc-gallery.com/',
+      image: 'images/knock.jpg'
+    }
   ],
 
   jobs: [
     {
       title: 'Google',
-      description: 'I was a software engineer on the Google My Business product.',
+      description: 'Software engineer on the Google My Business product.',
       url: 'https://www.google.com/business/',
-      image: '',
+      image: 'images/google.jpg',
     },
 
     {
       title: 'Skillshare',
       description: 'Full-stack engineer in the early days of Skillshare.',
-      url: 'https://www.skillshare.com/'
+      url: 'https://www.skillshare.com/',
+      image: 'images/skillshare.jpg',
     }
   ]
 }
