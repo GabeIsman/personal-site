@@ -1,10 +1,10 @@
 mixin work(job)
-  article
-    img(src=job.image)
-    .article-text
-      a(href=job.url target='_blank')
+  a(href=job.url target='_blank')
+    article
+      img(src=job.image)
+      .article-text
         h4.article-title= job.title
-      p.article-description= job.description
+        p.article-description= job.description
 
 .left-column
   .profile-card

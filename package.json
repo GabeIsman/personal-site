@@ -24,6 +24,7 @@
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.0.1",
     "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
     "gulp-util": "^3.0.4",
     "jade": "^1.9.2",
     "jadeify": "^4.1.0",

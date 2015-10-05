@@ -2,7 +2,7 @@ var gulp = require('gulp');
 
 var rename = require('gulp-rename');
 var jshint = require('gulp-jshint');
-var compass = require('gulp-compass');
+var sass = require('gulp-sass');
 var jade = require('gulp-jade');
 var source = require('vinyl-source-stream');
 var watchify = require('watchify');
@@ -62,13 +62,8 @@ gulp.task('html', function() {
 gulp.task('styles', function() {
   gulp.src(APP + '/stylesheets/**/*.scss')
     .pipe(plumber())
-    .pipe(compass({
-      sass: APP + 'stylesheets/',
-      css: DEST + 'css/',
-      image: DEST + 'images/',
-      font: DEST + 'fonts/'
-    }))
+    .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
-    .pipe(gulp.dest(DEST + 'css/'))
-    .on("error", notify.onError("Styles error: <%= error.message %>"));
+    .pipe(gulp.dest(CSS_DEST))
+    .on('error', notify.onError('Styles error: <%= error.message %>'));
 });

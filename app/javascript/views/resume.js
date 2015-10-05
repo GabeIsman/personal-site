@@ -2,28 +2,28 @@ module.exports = {
   projects: [
     {
       title: 'Paper City',
-      description: 'Documentary and accompanying curriculum empowering at-risk, and incarcerated youth to take control of their futures. I built the website, and continue consulting on technology.',
+      description: 'Documentary and accompanying curriculum empowering at-risk, and incarcerated youth to take control of their futures. I built the website, and am consulting with them on further technology.',
       url: 'http://www.papercitymovie.com',
       image: 'images/papercity.jpg'
     },
 
     {
       title: 'Media Public',
-      description: 'Re-imagining public media. Knight Foundation Prototype Fund grantee. Actively working with @mkramer, @arbiterofbits, and @nkkl.',
+      description: 'Re-imagining the public\'s relationship to public media. Knight Foundation Prototype Fund grantee. Actively working with @mkramer, @arbiterofbits, and @nkkl.',
       url: 'https://github.com/mediapublic/mediapublic',
       image: 'images/mediapublic.jpg'
     },
 
     {
       title: 'Check The Police',
-      description: 'Built the rails app for the grading system for local policies around policing and accontability. Developed by @samswey and @deray.',
+      description: 'System of grading local policies around policing and accontability, developed by @samswey and @deray. I built them a Rails app.',
       url: 'http://www.checkthepolice.org/',
       image: 'images/checkthepolice.jpg',
     },
 
     {
       title: 'TechChange',
-      description: 'Building features and consulting on development best practices.',
+      description: 'Online education company focused on international development professionals. I build features and consult with them on development best practices.',
       url: 'https://www.techchange.org/',
       image: 'images/techchange.jpg',
     },
