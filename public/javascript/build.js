@@ -19,7 +19,7 @@ var jade_interp;
 ;var locals_for_with = (locals || {});(function (jobs, projects, undefined) {
 jade_mixins["work"] = function(job){
 var block = (this && this.block), attributes = (this && this.attributes) || {};
-buf.push("<a" + (jade.attr("href", job.url, true, false)) + " target=\"_blank\"><article><img" + (jade.attr("src", job.image, true, false)) + "/><div class=\"article-text\"><h4 class=\"article-title\">" + (jade.escape(null == (jade_interp = job.title) ? "" : jade_interp)) + "</h4><p class=\"article-description\">" + (jade.escape(null == (jade_interp = job.description) ? "" : jade_interp)) + "</p></div></article></a>");
+buf.push("<a" + (jade.attr("href", job.url, true, false)) + " target=\"_blank\"><article><img" + (jade.attr("src", job.image, true, false)) + "/><div class=\"article-text\"><h4 class=\"article-title\">" + (jade.escape(null == (jade_interp = job.title) ? "" : jade_interp)) + "</h4><p class=\"article-description\">" + (jade.escape(null == (jade_interp = job.description) ? "" : jade_interp)) + "</p></div><span class=\"article-date\">" + (jade.escape(null == (jade_interp = job.date) ? "" : jade_interp)) + "</span></article></a>");
 };
 buf.push("<div class=\"left-column\"><div class=\"profile-card\"><div class=\"image-container\"><img src=\"images/face2.jpg\"/></div><h2 class=\"name-container\">Gabe Isman</h2><p class=\"mission\">Constantly seeking ways to increase peace, justice, and openness.</p><div class=\"social-links\"><a href=\"https://twitter.com/gabeisman\" class=\"social-link\"><i class=\"fa fa-twitter\"></i></a><a href=\"https://github.com/gabeisman\" class=\"social-link\"><i class=\"fa fa-github\"></i></a><a href=\"https://www.linkedin.com/pub/gabriel-isman/17/62a/139\" class=\"social-link\"><i class=\"fa fa-linkedin\"></i></a></div></div></div><div class=\"right-column\"><section><h1>Projects</h1><div class=\"work-container\">");
 // iterate projects
@@ -92,14 +92,16 @@ module.exports = {
       title: 'Paper City',
       description: 'Documentary and accompanying curriculum empowering at-risk, and incarcerated youth to take control of their futures. I built the website, and am consulting with them on further technology.',
       url: 'http://www.papercitymovie.com',
-      image: 'images/papercity.jpg'
+      image: 'images/papercity.jpg',
+      date: 'Feb. 2015-present'
     },
 
     {
       title: 'Media Public',
       description: 'Re-imagining the public\'s relationship to public media. Knight Foundation Prototype Fund grantee. Actively working with @mkramer, @arbiterofbits, and @nkkl.',
       url: 'https://github.com/mediapublic/mediapublic',
-      image: 'images/mediapublic.jpg'
+      image: 'images/mediapublic.jpg',
+      date: 'May 2015-present'
     },
 
     {
@@ -107,6 +109,7 @@ module.exports = {
       description: 'System of grading local policies around policing and accontability, developed by @samswey and @deray. I built them a Rails app.',
       url: 'http://www.checkthepolice.org/',
       image: 'images/checkthepolice.jpg',
+      date: 'April 2015'
     },
 
     {
@@ -114,13 +117,15 @@ module.exports = {
       description: 'Online education company focused on international development professionals. I build features and consult with them on development best practices.',
       url: 'https://www.techchange.org/',
       image: 'images/techchange.jpg',
+      date: 'March 2015-present'
     },
 
     {
       title: 'Knock at the Gates',
       description: 'Visualizing the application of the death penalty in America. In collaboration with @john_s_west and @galenbeebe.',
       url: 'http://knock-at-the-gates.etc-gallery.com/',
-      image: 'images/knock.jpg'
+      image: 'images/knock.jpg',
+      date: 'Aug. 2014-Nov.'
     }
   ],
 
@@ -130,6 +135,7 @@ module.exports = {
       description: 'Software engineer on the Google My Business product.',
       url: 'https://www.google.com/business/',
       image: 'images/google.jpg',
+      date: 'Oct. 2013-Feb. 2015'
     },
 
     {
@@ -137,6 +143,7 @@ module.exports = {
       description: 'Full-stack engineer in the early days of Skillshare.',
       url: 'https://www.skillshare.com/',
       image: 'images/skillshare.jpg',
+      date: 'June 2012-Aug 2013'
     }
   ]
 }

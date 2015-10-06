@@ -121,9 +121,14 @@ article {
     &:before {
       opacity: 0.5;
     }
-    p {
+
+    .article-description {
       color: #fff;
       font-weight: 600;
+    }
+
+    .article-date {
+      color: #FFD500;
     }
   }
 
@@ -145,6 +150,15 @@ article {
 .article-description {
   width: 300px;
   padding: 0 10px;
+  color: #ddd;
+}
+
+.article-date {
+  transition: color 0.2s linear;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  font-size: 9px;
   color: #ddd;
 }
 

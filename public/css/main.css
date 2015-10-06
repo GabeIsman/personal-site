@@ -100,9 +100,11 @@ article {
     opacity: 0.75; }
   article:hover:before {
     opacity: 0.5; }
-  article:hover p {
+  article:hover .article-description {
     color: #fff;
     font-weight: 600; }
+  article:hover .article-date {
+    color: #FFD500; }
 
 .article-text {
   position: absolute;
@@ -118,6 +120,15 @@ article {
 .article-description {
   width: 300px;
   padding: 0 10px;
+  color: #ddd; }
+
+.article-date {
+  -webkit-transition: color 0.2s linear;
+          transition: color 0.2s linear;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  font-size: 9px;
   color: #ddd; }
 
 @media (max-width: 700px) {
